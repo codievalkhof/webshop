@@ -7,18 +7,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
-        <p>shop</p>
-        <p>news</p>
-        <p>info</p>
+        <ul>
+         <li>home</li>
+         <li>product</li>
+        <li>cart</li>
+        </ul>
+        
     </nav>
     <header></header>
     <div class="cta">
         <img class="cta-img" src="webshopimg.webp" alt="energy drink">
         <h2 class="cta-text">Release the beast</h2>
-        <button class="cta-button">Bekijk vooraad</button>
+        <button class="cta-button"
+        onclick="scrollToSection('#element_target')">
+            check vooraat
+        </button> 
     </div>
+<div id="element_target"></div>
+    <div class="parent">
+        <section class="banner1"></section>
+        <section class="banner2"></section>
+        <section class="product1"><img src="monsterpacific.png" alt=""></section>
+        <section class="product2"><img src="monsterrio.png" alt=""></section>
+        <section class="product3"><img src="monsternitro.png" alt=""></section>
+        <section class="product4"><img src="monsterkhaotic.png" alt=""></section>
+        <section class="product5"><img src="monstermango.png" alt=""></section>
+        <section class="product6"><img src="monsterpipeline.png" alt=""></section>
+        <section class="product7"><img src="monsterstrawberry.png" alt=""></section>
+        <section class="product8"><img src="monsterguava.png" alt=""></section>
+        <section class="product9"><img src="monsterfiesta.png" alt=""></section>
+        <section class="product10"><img src="monsterviolet.png" alt=""></section>
+        
+    </div>
+<script src="javascript.js"></script>
 </body>
 
 </html>
