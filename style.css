@@ -7,6 +7,9 @@ html, body {
     height: auto;
 }
 
+body {
+    padding-top: 60px;
+}
 
 
 .cta {
@@ -27,6 +30,7 @@ html, body {
     background-color: #333333;
     z-index: 1000;
 }
+
 
 .cta-text {
     font-size: 70px;
