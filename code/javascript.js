@@ -1,11 +1,3 @@
-function scrollToSection(section) {
-    const element = document.querySelector(section);
-
-    if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-    }
-}
-
 function myFunction() {
     let input = document.getElementById("myinput");
     let filter = input.value.toLowerCase();

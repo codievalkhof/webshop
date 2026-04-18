@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="home"></div>
+
+    <header>
+        <div class="header" id="myheader">
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="index.html">home</a></li>
+                    <li><a class="nav-link" href="index.html#shop">shop</a></li>
+                    <li>
+                        <a class="cart-link" href="cart.html">
+                            cart <span id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <input type="text" id="myinput" onkeyup="myFunction()" placeholder="search for a product...">
+
+    <div class="cta">
+        <img class="cta-img" src="webshopimg.webp" alt="energy drink">
+        <h2 class="cta-text">Release the beast</h2>
+        <a class="cta-button" href="index.html#shop">check voorraad</a>
+    </div>
+
+    <div id="shop"></div>
+
+    <div class="parent">
+        <section class="banner1"><img src="sidebannerad.png" alt="side banner"></section>
+        <section class="banner2"><img src="sidebannerad.png" alt="side banner"></section>
+
+        <section class="product" data-name="pacific punch" data-price="1.50">
+            <img src="monsterpacific.png" alt="pacific punch">
+            <p class="product-name">pacific punch</p>
+            <p class="price">€1.50</p>
+            <button class="add-to-cart">Add to cart</button>
+        </section>
+
+        <section class="product" data-name="rio punch" data-price="1.50">
+            <img src="monsterrio.png" alt="rio punch">
+            <p class="product-name">rio punch</p>
+            <p class="price">€1.50</p>
+            <button class="add-to-cart">Add to cart</button>
+        </section>
+
+        <section class="product" data-name="monster nitro" data-price="1.50">
+            <img src="monsternitro.png" alt="monster nitro">
+            <p class="product-name">monster nitro</p>
+            <p class="price">€1.50</p>
+            <button class="add-to-cart">Add to cart</button>
+        </section>
+
+        <section class="product" data-name="khaotic" data-price="1.50">
+            <img src="monsterkhaotic.png" alt="khaotic">
+            <p class="product-name">khaotic</p>
+            <p class="price">€1.50</p>
+            <button class="add-to-cart">Add to cart</button>
+        </section>
+
+        <section class="product" data-name="mango loco" data-price="1.50">
+            <img src="monstermango.png" alt="mango loco">
+            <p class="product-name">mango loco</p>
+            <p class="price">€1.50</p>
+            <button class="add-to-cart">Add to cart</button>
+        </section>
+
+        <section class="product" data-name="pipeline punch" data-price="1.50">
+            <img src="monsterpipeline.png" alt="pipeline punch">
+            <p class="product-name">pipeline punch</p>
+            <p class="price">€1.50</p>
+            <button class="add-to-cart">Add to cart</button>
+        </section>
+
+        <section class="product" data-name="strawberry dreams" data-price="1.50">
+            <img src="monsterstrawberry.png" alt="strawberry dreams">
+            <p class="product-name">strawberry dreams</p>
+            <p class="price">€1.50</p>
+            <button class="add-to-cart">Add to cart</button>
+        </section>
+
+        <section class="product" data-name="vice guava" data-price="1.50">
+            <img src="monsterguava.png" alt="vice guava">
+            <p class="product-name">vice guava</p>
+            <p class="price">€1.50</p>
+            <button class="add-to-cart">Add to cart</button>
+        </section>
+
+        <section class="product" data-name="fiesta mango" data-price="1.50">
+            <img src="monsterfiesta.png" alt="fiesta mango">
+            <p class="product-name">fiesta mango</p>
+            <p class="price">€1.50</p>
+            <button class="add-to-cart">Add to cart</button>
+        </section>
+
+        <section class="product" data-name="ultra violet" data-price="1.50">
+            <img src="monsterviolet.png" alt="ultra violet">
+            <p class="product-name">ultra violet</p>
+            <p class="price">€1.50</p>
+            <button class="add-to-cart">Add to cart</button>
+        </section>
+    </div>
+
+    <p id="no-results">No products found.</p>
+
+    <footer>
+        &copy; copyright ome co reach out at
+        <a href="mailto:40520@ma-web.nl">40520@ma-web.nl</a>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
