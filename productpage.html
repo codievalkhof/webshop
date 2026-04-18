@@ -4,81 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Monster Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <input type="text" id="myinput" onkeyup="myfuntion()" placeholder="search for names">
-    <ul id="productlist">
-        <li><a href="#">pacific punch</a></li>
-        <li><a href="#">rio punch</a></li>
-        <li><a href="#">monster nitro</a></li>
-        <li><a href="#">mango loco</a></li>
-        <li><a href="#">pipeline punch</a></li>
-        <li><a href="#">strawberry dreams</a></li>
-        <li><a href="#">vice guava</a></li>
-        <li><a href="#">fiesta mango</a></li>
-        <li><a href="#">ultra violet</a></li>
-        <li><a href="#">khaotic</a></li>
-    </ul>
     <div id="home"></div>
+
     <header>
         <div class="header" id="myheader">
             <nav>
-                <ul>
+                <ul class="nav-list">
                     <li><button class="cta-button3" onclick="scrollToSection('#home')">home</button></li>
                     <li><button class="cta-button2" onclick="scrollToSection('#shop')">shop</button></li>
-                    <li>cart</li>
+                    <li class="cart-text">cart</li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <input type="text" id="myinput" onkeyup="myFunction()" placeholder="Search for a product...">
+
     <div class="cta">
         <img class="cta-img" src="webshopimg.webp" alt="energy drink">
         <h2 class="cta-text">Release the beast</h2>
         <button class="cta-button" onclick="scrollToSection('#shop')">
-            check vooraat
+            check voorraad
         </button>
     </div>
-    <div id="shop"></div>
-    <div class="parent">
-        <section class="banner1"><img src="sidebannerad.png" alt=""></section>
-        <section class="banner2"><img src="sidebannerad.png" alt=""></section>
-        <section class="product1"><img src="monsterpacific.png" alt="">
-            <p>price 1.50</p>
-        </section>
-        <section class="product2"><img src="monsterrio.png" alt="">
-            <p>price 1.50</p>
-        </section>
-        <section class="product3"><img src="monsternitro.png" alt="">
-            <p>price 1.50</p>
-        </section>
-        <section class="product4"><img src="monsterkhaotic.png" alt="">
-            <p>price 1.50</p>
-        </section>
-        <section class="product5"><img src="monstermango.png" alt="">
-            <p>price 1.50</p>
-        </section>
-        <section class="product6"><img src="monsterpipeline.png" alt="">
-            <p>price 1.50</p>
-        </section>
-        <section class="product7"><img src="monsterstrawberry.png" alt="">
-            <p>price 1.50</p>
-        </section>
-        <section class="product8"><img src="monsterguava.png" alt="">
-            <p>price 1.50</p>
-        </section>
-        <section class="product9"><img src="monsterfiesta.png" alt="">
-            <p>price 1.50</p>
-        </section>
-        <section class="product10"><img src="monsterviolet.png" alt="">
-            <p>price 1.50</p>
-        </section>
 
+    <div id="shop"></div>
+
+    <div class="parent">
+        <section class="banner1"><img src="sidebannerad.png" alt="banner"></section>
+        <section class="banner2"><img src="sidebannerad.png" alt="banner"></section>
+        
+        <section class="product">
+            <img src="monsterpacific.png" alt="Pacific Punch">
+            <p class="product-name">pacific punch</p>
+            <p>price 1.50</p>
+        </section>
+<section class="product">
+    <img src="monsterrio.png" alt="Rio Punch">
+    <p class="product-name">rio punch</p>
+            <p>price 1.50</p>
+        </section>
+<section class="product">
+    <img src="monsternitro.png" alt="Monster Nitro">
+    <p class="product-name">monster nitro</p>
+            <p>price 1.50</p>
+        </section>
+<section class="product">
+    <img src="monsterkhaotic.png" alt="Khaotic">
+    <p class="product-name">khaotic</p>
+            <p>price 1.50</p>
+        </section>
+<section class="product">
+    <img src="monstermango.png" alt="Mango Loco">
+    <p class="product-name">mango loco</p>
+            <p>price 1.50</p>
+        </section>
+<section class="product">
+    <img src="monsterpipeline.png" alt="Pipeline Punch">
+    <p class="product-name">pipeline punch</p>
+            <p>price 1.50</p>
+        </section>
+<section class="product">
+    <img src="monsterstrawberry.png" alt="Strawberry Dreams">
+    <p class="product-name">strawberry dreams</p>
+            <p>price 1.50</p>
+        </section>
+<section class="product">
+    <img src="monsterguava.png" alt="Vice Guava">
+    <p class="product-name">vice guava</p>
+            <p>price 1.50</p>
+        </section>
+<section class="product">
+    <img src="monsterfiesta.png" alt="Fiesta Mango">
+    <p class="product-name">fiesta mango</p>
+            <p>price 1.50</p>
+        </section>
+<section class="product">
+    <img src="monsterviolet.png" alt="Ultra Violet">
+    <p class="product-name">ultra violet</p>
+            <p>price 1.50</p>
+        </section>
     </div>
-    <footer> &copy;copyright ome co reach out at <a href="mailto:40520@ma-web.nl">40520@ma-web.nl</a></footer>
+<p id="no-results">No products found.</p>
+
+<footer>
+    &copy; copyright ome co reach out at
+    <a href="mailto:40520@ma-web.nl">40520@ma-web.nl</a>
+</footer>
+
     <script src="javascript.js"></script>
 </body>
 
