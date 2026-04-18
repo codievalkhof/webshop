@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="cart-link" href="./index.html">home</a></li>
+                    <li><a class="cart-link" href="./index.html#shop">shop</a></li>
+                    <li>
+                        <a class="cart-link" href="./cart.html">
+                            cart <span id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1 class="cart-page-title">Shopping Cart</h1>
+
+    <div class="cart-container">
+        <div id="cart-items"></div>
+        <p class="cart-total">Total: €<span id="cart-total">0.00</span></p>
+        <button class="clear-cart-btn" onclick="clearCart()">Clear cart</button>
+    </div>
+
+    <footer>
+        &copy; copyright ome co reach out at
+        <a href="mailto:40520@ma-web.nl">40520@ma-web.nl</a>
+    </footer>
+
+    <script src="./cart.js"></script>
+</body>
+
+</html>

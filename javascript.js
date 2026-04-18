@@ -1,6 +1,9 @@
 function scrollToSection(section) {
     const element = document.querySelector(section);
-    element.scrollIntoView({ behavior: "smooth" });
+
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+    }
 }
 
 function myFunction() {
@@ -29,3 +32,49 @@ function myFunction() {
         noResults.style.display = "none";
     }
 }
+
+function addToCart(name, price) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let existingItem = cart.find(item => item.name === name);
+
+    if (existingItem) {
+        existingItem.quantity++;
+    } else {
+        cart.push({
+            name: name,
+            price: price,
+            quantity: 1
+        });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCounter();
+}
+
+document.querySelectorAll(".add-to-cart").forEach(button => {
+    button.addEventListener("click", function () {
+        const product = button.parentElement;
+        const name = product.dataset.name;
+        const price = parseFloat(product.dataset.price);
+
+        addToCart(name, price);
+    });
+});
+
+function updateCartCounter() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let totalItems = 0;
+
+    cart.forEach(item => {
+        totalItems += item.quantity;
+    });
+
+    const cartCount = document.getElementById("cart-count");
+
+    if (cartCount) {
+        cartCount.textContent = totalItems;
+    }
+}
+
+updateCartCounter();
